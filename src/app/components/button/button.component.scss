@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+button{
+  padding: 1rem;
+  width: auto;
+  background-color: $pink-color;
+  font-family: $text-font;
+  font-weight: 700;
+  border: none;
+  border-radius: .2rem
+}
