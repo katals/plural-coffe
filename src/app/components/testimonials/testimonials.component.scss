@@ -1,0 +1,60 @@
+@import './src/styles.scss';
+.testimonials{
+    padding: 6.25rem;
+    height: 100vh;
+    background: $pink-color;
+}
+
+.testimonials__title{
+    margin-bottom:3.12rem;
+    color: white;
+    font-size: 2.5rem;
+    font-family: $title-font;
+    display: flex;
+
+}
+
+.testimonials__title img{
+    margin-top: 1.9rem;
+    width: 5rem;
+}
+
+.testimonials__list-cards{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 10%;
+    row-gap: 5%;
+}
+
+.testimonials__card{
+    padding: 1.25rem;
+    background: $white-color;
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.testimonials__card h4{
+    font-size: 1.075rem;
+    font-family: $title-font;
+}
+
+.testimonials__card p{
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: $text-font;
+}
+
+.testimonials__card img{
+  object-fit: cover;
+    margin-right: 1.25rem;
+    width: 3.437rem;
+    height: 3.437rem;
+    border-radius: 50%;
+}
+
+.testimonials__card div{
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+}

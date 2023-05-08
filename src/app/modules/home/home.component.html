@@ -1,1 +1,31 @@
-<p>home works!</p>
+<ngbd-carousel-navigation [images]="imagesArray">
+</ngbd-carousel-navigation>
+<section class="history-section__container">
+  <div class="history-section__text-container">
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
+      pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud
+      ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+      ullamco ut ea consectetur et est culpa et culpa duis.</p>
+  </div>
+  <figure class="history-section__img-container">
+    <img src="./assets/images/recolector.jpg" alt="">
+  </figure>
+</section>
+<section class="products-card__container">
+  <h2 class="products-card__title">
+    Our Products
+  </h2>
+  <ul class="products-card__list">
+    <li>
+      <app-product-card [image]="'./assets/images/product-photo1.jpg'"></app-product-card>
+    </li>
+    <li>
+      <app-product-card [image]="'./assets/images/product-photo2.jpg'"></app-product-card>
+    </li>
+    <li>
+      <app-product-card [image]="'./assets/images/product-photo3.jpg'"></app-product-card>
+    </li>
+  </ul>
+</section>
+<app-testimonials></app-testimonials>

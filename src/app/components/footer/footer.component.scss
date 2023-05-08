@@ -1,0 +1,44 @@
+@import './src/styles.scss';
+footer{
+    padding: 6.25rem;
+    background-color: $green-color;
+    display: grid;
+    grid-template-columns: 50% 15% 15% 15%;
+}
+
+footer div{
+    display: flex;
+}
+
+footer header img{
+    align-self: center;
+    margin-right: 1.87rem;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+footer h2{
+    font-size: 3.75rem;
+    font-weight: 500;
+    font-family: $title-font;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer header ul{
+    display: flex;
+}
+
+footer > ul li:first-child{
+  font-weight: 700;
+}
+
+footer li{
+    padding: .9rem;
+    font-family: var(--text-font);
+    font-size: .78rem;
+}
+

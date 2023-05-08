@@ -1,12 +1,18 @@
-<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
-  [showNavigationIndicators]="showNavigationIndicators">
-  <ng-template ngbSlide *ngFor="let image of images">
-    <div class="picsum-img-wrapper">
-      <img [src]="image" alt="Random slide" />
-    </div>
-    <div class="carousel-caption">
-      <h3>No mouse navigation</h3>
-      <p>This carousel hides navigation arrows and indicators.</p>
-    </div>
-  </ng-template>
-</ngb-carousel>
+<div class="container">
+  <div class="button-text">
+    <h3 *ngIf="showText">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+      cupidatat.</h3>
+    <app-button *ngIf="showButton" [buttonText]="'¡UNETE A NOSOTROS!'"></app-button>
+  </div>
+
+  <ngb-carousel [interval]="5000" [pauseOnFocus]="pauseOnFocus" [pauseOnHover]="pauseOnHover" *ngIf="images"
+    [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="picsum-img-wrapper">
+        <img [src]="image" alt="Random slide" />
+      </div>
+      <div class="carousel-caption">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

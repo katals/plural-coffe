@@ -1,16 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SliderComponent, ButtonComponent } from '../../components';
+import { HomeComponent } from '../home/home.component';
+import { SliderComponent, ButtonComponent, ProductCardComponent } from '../../components';
+import { TestimonialsComponent } from 'src/app/components/testimonials/testimonials.component';
 
 
 
 @NgModule({
   declarations: [
-    ButtonComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,
+    ProductCardComponent,
     SliderComponent,
+    ButtonComponent,
+    TestimonialsComponent
+  ],
+  exports: [
+    HomeComponent
   ]
 })
-export class HomeModule { }
+export class HomeModule {
+}

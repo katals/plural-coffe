@@ -1,0 +1,39 @@
+@import './src/styles.scss';
+.product-card{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: #3B3B3B;
+    border-radius: 2.5%;
+    color: $white-color;
+}
+.product-card__img-container{
+    width: 100%;
+    height: 50%;
+    border-radius: 2.5%;
+}
+
+.product-card__img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.products-card h3{
+    font-family: $title-font;
+    color: $white-color;
+}
+
+.products-card h4{
+    font-family: $text-font;
+    color: $white-color;
+}
+
+.product-card__author{
+    display: flex;
+}
+
+.product-card__author img{
+    width: 3rem;
+    height: 3rem;
+}
